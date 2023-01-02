@@ -1,88 +1,74 @@
 /*بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ */
 //*****ربِّ زِدْنِي عِلْماً*****//
 /******************************/
-///////Mahi Sarwar Anol/////
+///////Mahi Sarwar Anol///////
 /*******************************/
-//"We grow through what we go through".
-//"Always make a total effort even when the odds are completely against you".
-//"What peoples call luck is not luck,it's Allah's will".
-//"For what was written for you was written by the greatest writer".
-//"Heart endures when eyes does not see".
-//"Never lose hope in Allah".
-//"No one can defeat you untill you accept your defeat".
-//"And remember,nobody's feelings are more important than yours,so take time to love yourself".
-//"Think twice code ones."
-//"Jab kisi aur ki barbaadi apni jeet jaisi lage ... toh humse zyada barbaad aur koi nahi hai is duniya mein."
-//"Manjil unhe milte hein jinke sapno mein jaan hoti hain,pankho se kuch nehi hota,honsla se uran hoti hai."
-#include <bits/stdc++.h>
-#define ll long long
-#define ull unsigned long long
-ll mod=1000000007;
+#include<bits/stdc++.h>
 using namespace std;
+#ifndef ONLINE_JUDGE
+   #include "mahi/debug.h"
+#endif
+#define ull unsigned long long
+typedef long long int ll;
+#define t_digit(x) (int)log10((double)x)+1
+#define endl "\n"
+using pi = pair<int,int>;
+#define mp make_pair
+#define f first
+#define s second
+using vi = vector<int>;
+#define sz(x) int((x).size())
+#define all(x) begin(x), end(x)
+#define pb push_back
+#define endl "\n"
+#define mod 1000000007;//10^9+7;
 
 void s_test();
 void FIO();
-  
-void vampi()
-{ 
-   int n;
-   cin>>n;
-   int a[n];
-   int b[n];
-   for(int i=0;i<n;i++)
-   {
-    cin>>a[i];
-   }
+int t = 1;
 
-   for(int i=0;i<n;i++)
-   {
-    cin>>b[i];
-   }
+int tc=t;
 
-   for(int i=0;i<n;i++)
-   {
-         if(a[i]<b[i])
-         {
-             swap(a[i],b[i]);
-         }
-   }
-   int ans1=INT_MIN;
-   int ans2=INT_MIN;
-   for(int i=0;i<n;i++)
-   {
-         ans1=max(ans1,a[i]);
-         ans2=max(ans2,b[i]);
-   }
-   cout<<ans1*ans2<<endl;
+bool cmp(int a,int b)
+{
+   return a>b;
 }
 
- 
-int main() {
- 
+void solution()
+{
+   
+}
+
+
+signed main()
+{
+   
+   // clock_t sc = clock();
    FIO();
    s_test();
-    
-   int t;
-   cin>>t;
-   while(t--)
-   {
-      vampi();
-   }
-   
-   return 0;
-}
 
-void s_test()
-{
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif 
+   cin >> t;
+
+   while (t--)
+   {
+      solution();
+   }
+   cerr.precision(8);
+   // cerr << fixed << "Run Time : " << ((double)(clock() - sc) / CLOCKS_PER_SEC);
 }
 
 void FIO()
 {
    ios_base::sync_with_stdio(false);
-   cin.tie(NULL);
-   cout.tie(NULL);
+   cin.tie(nullptr);
+   cout.tie(nullptr);
+}
+
+void s_test()
+{
+   #ifndef ONLINE_JUDGE
+   freopen("input.txt", "r", stdin);
+   freopen("output.txt", "w", stdout);
+   // freopen("error.txt","w",stderr);
+   #endif
 }
