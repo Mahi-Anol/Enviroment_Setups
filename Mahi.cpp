@@ -62,6 +62,7 @@ void FIO()
    ios_base::sync_with_stdio(false);
    cin.tie(nullptr);
    cout.tie(nullptr);
+   cin.exceptions(ios::badbit | ios::failbit);
 }
 
 void s_test()
