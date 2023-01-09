@@ -36,11 +36,7 @@ bool cmp(int a,int b)
 
 void solution()
 {
-
-   int n;
-   cin>>n;
-   
-
+  
 }
 
 signed main()
