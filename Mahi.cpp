@@ -36,25 +36,39 @@ bool cmp(int a,int b)
 
 void solution()
 {
+
+   int n;
+   cin>>n;
    
+
 }
 
-
 signed main()
-{
-   
+{   
    // clock_t sc = clock();
    FIO();
    s_test();
 
    cin >> t;
-
    while (t--)
    {
-      solution();
+      try{
+         solution();
+      }catch(exception &ex)
+      {
+          for(int i=1;i<5;i++)
+          {
+            for(int j=1;j<42;j++)
+            {
+               cerr<<"*";
+            }
+            cerr<<endl;
+          }
+          cerr<<"\t\t\t\t\t\t\t\t\t\t\tCheak Inputs and data types and max range"<<endl;
+      }
    }
    cerr.precision(8);
-   // cerr << fixed << "Run Time : " << ((double)(clock() - sc) / CLOCKS_PER_SEC);
+   // cerr << fixed << "Run Time : " << ((double)(clock() - sc) / CLOCKS_PER_SEC)<<endl;
 }
 
 void FIO()
